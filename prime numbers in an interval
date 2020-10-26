@@ -1,0 +1,13 @@
+import math
+
+interval_starting = 0
+interval_ending = 40
+
+for number in range(interval_starting, interval_ending):
+    if number > 1 or number == 1:
+        for divider in range(2,number):
+            if(number % divider == 0):
+                break
+
+        else:
+            print(number)
